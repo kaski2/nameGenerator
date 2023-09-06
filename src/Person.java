@@ -23,6 +23,10 @@ public class Person {
         this.name = name;
     }
 
+    public String getName(){
+        return name;
+    }
+
     public void setNickName(String nickName){
         this.nickName = nickName;
     }
@@ -63,7 +67,4 @@ public class Person {
         }
         return false;
     }
-
-
-
 }

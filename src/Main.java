@@ -9,10 +9,14 @@ public class Main {
             people[i] = new Person(ConstantValues.names[i]);
         }
 
-        for(Person person : people){
-            System.out.println(person.getNickName());
-        }
-        StringBuilder sb = new StringBuilder();
-    }
+        String sb = "Wu-Tang name generator for programmers\n" +
+                "--------------------------------------\n" +
+                "- The generator can produce " +
+                ConstantValues.firstNick.length * ConstantValues.lastNick.length + " unique names";
 
+        System.out.println(sb);
+        for(int i=0; i< people.length; i++){
+            System.out.format("%3s%s%16s%s%n", i + 1 + ".", people[i].getName(), "a.k.a. ", people[i].getNickName());
+        }
+    }
 }
